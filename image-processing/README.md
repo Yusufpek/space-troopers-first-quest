@@ -20,9 +20,9 @@
 
 | Code | Screenshot |
 | ----------- | ----------- |
-| ![code][camera-code] | ![camera-video][camera-video] |
-| ![code][hsv-code] | ![camera-video][hsv-video] |
-| ![code][final-code] | ![camera-video][final-video] |
+| ![code][camera-code]<div align=center>*Camera Codes*</div> | ![camera-video][camera-video] <div align=center>*Camera Video*</div> |
+| ![code][hsv-code] <div align=center>*HSV Codes*</div> | ![camera-video][hsv-video] <div align=center>*HSV Video*</div> |
+| ![code][final-code] <div align=center>*Final Codes*</div> | ![camera-video][final-video]<div align=center>*Final Video*</div> |
 
 ***
 
