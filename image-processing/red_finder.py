@@ -12,7 +12,6 @@ while True:
     #find center
     width  = round(camera.get(cv2.CAP_PROP_FRAME_WIDTH))   # int `width`
     height = round(camera.get(cv2.CAP_PROP_FRAME_HEIGHT))  # int `height
-    video = cv2.rectangle(video, (0,0), (5,5), (0,0,0), thickness = 10 )
     center = width // 2 , height // 2
     
     #hsv frame
@@ -39,15 +38,19 @@ while True:
 
             # check for position
             writeCommand = ""
-            if(center[0] > centerOfContour[0]):
+            if(center[0] * 0.5 > centerOfContour[0]):
                 writeCommand = "go right"
-            else:
+            elif(center[0] > centerOfContour[0]):
+                writeCommand = "go faster right"
+            elif(center[0] * 1.5 < centerOfContour[0]):
                 writeCommand = "go left"
+            else:
+                writeCommand = "go faster left"
             
             #draw
             video = cv2.rectangle(video, (x, y), (x + w, y + h), (0, 0, 255), 2) #draw a rectangel for found obsitcle
             cv2.putText(video, "RED", (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255)) # write it is red
-            cv2.putText(video, writeCommand, (width - 150, height - 10), cv2.FONT_HERSHEY_TRIPLEX, 1.0, (0, 0, 0)) # wrtie the command
+            cv2.putText(video, writeCommand, (width - len(writeCommand) * 20, height - 10), cv2.FONT_HERSHEY_TRIPLEX, 1.0, (0, 0, 255)) # write the command
 
     #last frame
     cv2.imshow("filtered",video) # last frame, find the red, write command, draw the axiis
