@@ -27,11 +27,11 @@
 ***
 
 ### References
->https://www.geeksforgeeks.org/python-opencv-capture-video-from-camera/
-https://www.geeksforgeeks.org/multiple-color-detection-in-real-time-using-python-opencv/
-https://stackoverflow.com/questions/39953263/get-video-dimension-in-python-opencv
-https://codeyarns.com/tech/2015-03-11-fonts-in-opencv.html#gsc.tab=0
-https://www.markdownguide.org/cheat-sheet/ :)
+>- https://www.geeksforgeeks.org/python-opencv-capture-video-from-camera/
+>- https://www.geeksforgeeks.org/multiple-color-detection-in-real-time-using-python-opencv/
+>- https://stackoverflow.com/questions/39953263/get-video-dimension-in-python-opencv
+>- https://codeyarns.com/tech/2015-03-11-fonts-in-opencv.html#gsc.tab=0
+>- https://www.markdownguide.org/cheat-sheet/ :)
 
 
 [camera-code]: screenshots/camera-code.png
